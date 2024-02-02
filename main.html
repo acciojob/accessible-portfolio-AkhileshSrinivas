@@ -4,13 +4,48 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<title>Accessible Portfolio</title>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- Header with Heading -->
+    <header role="heading">
+        <h1>My Accessible Portfolio</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav role="navigation">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content with Image and Description -->
+    <main>
+        <img src="portfolio-image.jpg" alt="A descriptive text for the portfolio image" role="img">
+
+        <section>
+            <h2 id="about">About Me</h2>
+            <p>Welcome to my portfolio! I am a passionate individual dedicated to creating accessible web content.</p>
+        </section>
+
+        <!-- List with ARIA List and List Item roles -->
+        <section>
+            <h2 id="projects">Projects</h2>
+            <ul role="list">
+                <li role="listitem">Web Accessibility Audit</li>
+                <li role="listitem">Responsive Design Workshop</li>
+                <li role="listitem">Inclusive UI/UX Design</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact me at: <a href="mailto:contact@example.com">contact@example.com</a></p>
+    </footer>
 
 </body>
-
 </html>
